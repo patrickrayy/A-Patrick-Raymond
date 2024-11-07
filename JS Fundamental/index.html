@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Data Types</title>
+    </head>
+    <body>
+        <h1>Data Types</h1>
+        <p id="output"></p>
+        <script>
+            let message = "Contoh string";
+            let isActive = true;
+            let count = 24;
+            let items = ["Mobil", "Laptop", "Bola", "Hoodie"];
+            let user = { name: "Ray", age: 19 };
+    
+            document.getElementById("output").innerText = `
+                Message (String): ${message}\n
+                Is Active (Boolean): ${isActive}\n
+                Count (Number): ${count}\n
+                Items (Array): ${items}\n
+                User (Object): ${JSON.stringify(user)}`
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
